@@ -9,11 +9,11 @@
 
 import java.util.Scanner;
 
-public class NullProductException extends RunTimeException {
-     
-    //create constructor
-       public NullProductException (){
-        super(name, weight); //Initialize variables from superclass  (product)
+public class NullProductException extends RuntimeException {
+      private String name;
+    
+      public NullProductException ( String name){
+        this.name = name; //create constructor
     }
 
     public static void main (String []args){
@@ -32,5 +32,6 @@ if (name.equals(null)) {
 finally {
     System.out.println("End of Exception.Thank you!"); //optional finally block
 }
+till.close();
     }
 }
