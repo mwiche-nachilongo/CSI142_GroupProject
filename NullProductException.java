@@ -10,11 +10,11 @@
 import java.util.Scanner;
 
 public class NullProductException extends RunTimeException {
-    
-    public NullProductException (String name, double price, int quantity){
-        super(name, price, quantity); //Initialize variables from superclass  (product)
-    } //create constructor
-    
+     
+    //create constructor
+       public NullProductException (){
+        super(name, weight); //Initialize variables from superclass  (product)
+    }
 
     public static void main (String []args){
         Scanner till = new Scanner(System.in);
@@ -28,9 +28,9 @@ if (name.equals(null)) {
     
 } catch  (Exception NullProductException) {
   System.out.println("Enter a product");  // handle exception
-}
+} 
 finally {
-    System.out.println("End of Exception.Thank you!");
+    System.out.println("End of Exception.Thank you!"); //optional finally block
 }
     }
 }
