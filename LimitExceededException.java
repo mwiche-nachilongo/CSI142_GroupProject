@@ -10,28 +10,26 @@ import java.util.Scanner;
 
 public class LimitExceededException extends RunTimeException {
   
-      public LimitExceededException(String name, double price , int quantity, String certificationBody) {
-        super(name, price, quantity);  //Initializes variables in sub-class (OrganicProduct)
-
-
+      public LimitExceededException() {
+        super(name, weight);  //Initializes variables in superclass (Product)
       } //create constructor
 
     public static void main(String[] args) {
     Scanner till = new Scanner (System.in);
 
         try {
-            String name = till.next();
+            double weight = till.nextDouble();
             
-            if ((name.equals(null) && certificationBody.equals("Not certified organic"))){//try risky code
-                System.out.println("Product name not entered.");
+            if (weight > 5.0){//try risky code
+                System.out.println("Maximum weight (in kgs) exceeded");
             }
             
-        } catch (Exception ProductNotOrganicException) {
-          System.out.println("Enter product name: ");  // handle exception
-          String name = till.next();
+        } catch (Exception LimitExceededProduct) {
+          System.out.println("Enter a weight that is equal to or below 10kg:");  // handle exception
+          double weight = till.nextDouble();
         }
         finally {
-            System.out.println("End of Exception. Thank you!");
+            System.out.println("End of Exception. Thank you!"); //optional finally block
         }
     }
 }
