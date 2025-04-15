@@ -9,7 +9,7 @@
 
 import java.util.Scanner;
 
-public class NullProductException extends Product {
+public class NullProductException extends RunTimeException {
     
     public NullProductException (String name, double price, int quantity){
         super(name, price, quantity); //Initialize variables from superclass  (product)
