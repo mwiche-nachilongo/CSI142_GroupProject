@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 /**Filename: ProductNotOrganicException
  * @version 1.0
@@ -7,12 +6,15 @@ import java.util.Scanner;
  * To compile: javac ProductNotOrganicException.java
  */
 
+ import java.util.Scanner;
 
-public class LimitExceededException extends RunTimeException {
+public class LimitExceededException extends RuntimeException {
   
-      public LimitExceededException() {
-        super(name, weight);  //Initializes variables in superclass (Product)
-      } //create constructor
+      private double weight;
+
+      public LimitExceededException( double weight) {
+        this.weight = weight;  //create constructor
+               }
 
     public static void main(String[] args) {
     Scanner till = new Scanner (System.in);
@@ -25,12 +27,13 @@ public class LimitExceededException extends RunTimeException {
             }
             
         } catch (Exception LimitExceededProduct) {
-          System.out.println("Enter a weight that is equal to or below 10kg:");  // handle exception
+          System.out.println("Enter a weight that is equal to or below 5kg:");  // handle exception
           double weight = till.nextDouble();
         }
         finally {
             System.out.println("End of Exception. Thank you!"); //optional finally block
         }
+        till.close();
     }
 }
 
