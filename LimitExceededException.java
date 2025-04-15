@@ -8,9 +8,9 @@ import java.util.Scanner;
  */
 
 
-public class ProductNotOrganicException extends OrganicProduct {
+public class LimitExceededException extends RunTimeException {
   
-      public ProductNotOrganicException(String name, double price , int quantity, String certificationBody) {
+      public LimitExceededException(String name, double price , int quantity, String certificationBody) {
         super(name, price, quantity);  //Initializes variables in sub-class (OrganicProduct)
 
 
@@ -21,7 +21,7 @@ public class ProductNotOrganicException extends OrganicProduct {
 
         try {
             String name = till.next();
-            String certificationBody = till.next();
+            
             if ((name.equals(null) && certificationBody.equals("Not certified organic"))){//try risky code
                 System.out.println("Product name not entered.");
             }
