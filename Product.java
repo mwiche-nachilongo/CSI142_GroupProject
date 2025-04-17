@@ -32,6 +32,6 @@ public abstract class Product {
         this.weight = weight;
     }
 
-    public abstract void displayInfo(); //method to be overriddedn in subclasses
+    public abstract void displayInfo(); //method to be overridden in subclasses
 }
 
