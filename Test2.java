@@ -45,8 +45,9 @@
     //create validation method for seasonal fruits
  
     private static void stockValidation(String name) throws ProductNotInStockException {
-       if (name.equalsIgnoreCase("Avocados") && name.equalsIgnoreCase("Lemons") && name.equalsIgnoreCase("Oranges")) {} 
+       if (name.equalsIgnoreCase("Avocados") && name.equalsIgnoreCase("Lemons") && name.equalsIgnoreCase("Oranges")) {
        throw new ProductNotInStockException("Product not in stock, apologies.");
+       }
     }
  }
  
