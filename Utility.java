@@ -1,3 +1,10 @@
+/**Filename: Utility
+ * @version 1.0
+ * @author: Jesse Nyabadza, Kelly
+ * Program to: Display creation of sort and search utility classes
+ * To compile: javac Utility.java 
+ */
+
 public class Utility {
     public static void selectionSort(int[] quantity) {  //Sorts product quantities in descending order
         for (int i = 0; i <quantity.length - 1; i++) {
@@ -14,10 +21,9 @@ public class Utility {
         }
     }
 
-    public static String linearSearch(String[] products, String target) {
+    public static int linearSearch(String[] products, String target) {
       for (int i =0; i < products.length; i++) {
         if (products[i].compareTo(target) == 1){
-           return i;
            System.out.println("Found");
         }
                
@@ -25,9 +31,9 @@ public class Utility {
       return -1;
     }
 
-    public static insertionSort(int[] price) {
+    public static void insertionSort(int[] price) {
         
-        for (int i = 1; i < price.length; i++;) {
+        for (int i = 1; i < price.length; i++) {
             int key = price[i];
             int j = i-1;
 
