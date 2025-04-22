@@ -34,7 +34,7 @@ public class Test {
    }
 //Create method to validate whether the parameter (weight) meets limit criterion
    private static void weightValidation( double weight) throws LimitExceededException {  
-      if (weight < 10)  {
+      if (weight > 10)  {
       throw new LimitExceededException("Select a weight below 10kg please!");
       }
    }
