@@ -31,6 +31,9 @@ public class MainApp {
 
           System.out.println("Product arraylist after linear search: " +Arrays.toString(products));
 
+          System.out.println("Product arraylist after binary search: " +Arrays.toString(products));
+          Utility.binarySearch(products, 2, 7, "banana");
+
           System.out.println("Original price arraylist: " +Arrays.toString(price));
           Utility.insertionSort(price);
 
