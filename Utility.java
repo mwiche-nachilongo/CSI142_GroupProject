@@ -1,6 +1,6 @@
 /**Filename: Utility
  * @version 1.0
- * @author: Jesse Nyabadza, Kelly
+ * @author: Jesse Nyabadza, Keoleboge Onamile
  * Program to: Display creation of sort and search utility classes
  * To compile: javac Utility.java 
  */
