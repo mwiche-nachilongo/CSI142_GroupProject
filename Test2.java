@@ -3,7 +3,7 @@
  * @author: Mwiche Dina Nachilongo 202208650
  * Program to: Test custom exception for subclasses (ProductNotInStockException)
  * To compile: javac Test2.java
- * To execute: java Test
+ * To execute: java Test2
  */
 
  import java.util.Scanner;
