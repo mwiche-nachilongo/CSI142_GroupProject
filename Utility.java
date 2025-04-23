@@ -20,7 +20,7 @@ public class Utility {
             quantity[minIndex] = temp;
         }
     }
-
+    
     public static int linearSearch(String[] products, String target) {
       for (int i =0; i < products.length; i++) {
         if (products[i].compareTo(target) == 1){
@@ -47,6 +47,7 @@ public class Utility {
         }
 
     }
+    //Recursive binary search
      public static String binarySearch (String [] products, int targetIndex, int maxIndex, String target) {
         if ( targetIndex == maxIndex ) {
         return products [maxIndex];
