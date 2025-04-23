@@ -47,4 +47,12 @@ public class Utility {
         }
 
     }
+     public static String binarySearch (String [] products, int targetIndex, int maxIndex, String target) {
+        if ( targetIndex == maxIndex ) {
+        return products [maxIndex];
+        }
+        if (products [targetIndex].equalsIgnoreCase(target)) {
+           System.out.println("The item searched for: " +products[targetIndex]);
+        }  return products [targetIndex];
+    }
 }
