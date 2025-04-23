@@ -63,7 +63,7 @@ public class MainApp {
      l3.displayInfo();
  
  
-    System.out.println("Select name of fruit in catalogue to validate availability: "); //prompt user input
+    System.out.println("Select name of products in catalogue to validate availability: "); //prompt user input
     String name = till.next();
     stockValidation(name);
 
